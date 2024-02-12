@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,500,700"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --OpenOrange: #a42;
+        --BackdropOrange: #dba;
+        --ReadableWhite: #fed;
+        --HeaderFont: "Oswald";
+        --ParagraphFont: "Nunito";
+        --CardBorderWidth: 0.5em;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--ReadableWhite);
+        font: 1em/1.6 var(--HeaderFont);
+        color: var(--OpenOrange);
+      }
+
+      .side {
+        width: 11in;
+        height: 8.5in;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        border-bottom: 1px solid var(--OpenOrange);
+      }
+
+      .side > section {
+        width: 0;
+        flex-grow: 1;
+        border-right: 1px solid var(--OpenOrange);
+      }
+
+      body > section:nth-child(3) {
+        border-right: none;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 3em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin-left: 0.25in;
+      }
+
+      p {
+        margin: 0.05in 0.25in;
+        font-family: var(--ParagraphFont);
+        color: black;
+      }
+      /*
+      .who-we-are-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .who-we-are {
+        background-image: url("IMG_4441_DxO.jpg");
+        background-size: contain;
+        flex-grow: 1;
+      } */
+
+      .logo {
+        width: 64%;
+        padding: 25% 18%;
+        padding-bottom: 3%;
+        /* background-color: var(--BackdropOrange); */
+      }
+
+      .cover h2 {
+        font-size: 1.4em;
+        text-align: center;
+        margin-left: 0;
+      }
+      .will-chandler-banner-outer {
+        width: 100%;
+        /* background-color: var(--BackdropOrange); */
+        padding-bottom: 5%;
+      }
+
+      .will-chandler-banner {
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 0.35in;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--OpenOrange);
+        border: 0.1in solid var(--OpenOrange);
+        box-sizing: border-box;
+        margin-top: 0.2in;
+        margin-bottom: -0.1in;
+      }
+
+      .will-chandler-img-container {
+        border-radius: 0.25in;
+        overflow: hidden;
+        width: 100%;
+        height: 1.6in;
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .names {
+        width: 100%;
+        display: flex;
+
+        color: var(--ReadableWhite);
+        height: 1in;
+
+        .firstname {
+          font-size: 200%;
+        }
+
+        h2 {
+          margin: 0% 5%;
+          font-size: 1em;
+          text-align: center;
+        }
+      }
+
+      .social-icon {
+        width: 1em;
+        vertical-align: center;
+      }
+
+      .social-icon.in-text {
+        transform: translateY(20%);
+        margin-right: 0.15em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="side">
+      <section class="cover">
+        <img class="logo" src="openosu.svg" />
+        <div class="will-chandler-banner-outer">
+          <div class="will-chandler-banner">
+            <div class="names">
+              <h2><span class="firstname">Chandler</span> Donahey</h2>
+              <h2><span class="firstname">Will</span> Garrison</h2>
+            </div>
+            <div class="will-chandler-img-container">
+              <img src="IMG_4441_DxO_4x1.jpg" />
+            </div>
+          </div>
+        </div>
+        <h2>
+          openosu.org |
+          <img class="social-icon in-text" src="instagram.webp" />open_osu
+        </h2>
+        <h2>asosu.oregonstate.edu/elections</h2>
+      </section>
+      <section>
+        <h1>idk yet lol</h1>
+      </section>
+      <section>
+        <h1>idk yet lol</h1>
+      </section>
+    </div>
+    <div class="side">
+      <section class="who-we-are-container">
+        <h1>Who We Are</h1>
+      </section>
+      <section>
+        <h1>Priorities</h1>
+        <h2>Priority 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+          quaerat aspernatur a nemo dolorum. Id repellendus voluptas facilis
+          beatae nobis dolorum optio at voluptatibus minus consequuntur deleniti
+          dolorem, eveniet magnam.
+        </p>
+        <h2>Priority 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+          quaerat aspernatur a nemo dolorum.
+        </p>
+        <h2>Priority 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+          quaerat aspernatur a nemo dolorum. Id repellendus voluptas facilis
+          beatae nobis dolorum optio at voluptatibus minus consequuntur.
+        </p>
+      </section>
+      <section>
+        <h1>idk yet lol</h1>
+      </section>
+    </div>
+  </body>
+</html>
