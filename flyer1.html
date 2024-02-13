@@ -43,6 +43,10 @@
         border-right: 1px solid var(--OpenOrange);
       }
 
+      .doublewide-section.doublewide-section.doublewide-section {
+        flex-grow: 2;
+      }
+
       body > section:nth-child(3) {
         border-right: none;
       }
@@ -149,6 +153,40 @@
         transform: translateY(20%);
         margin-right: 0.15em;
       }
+
+      .endorsement {
+        display: flex;
+      
+        img {
+          width: 1in;
+          align-self: center;
+          margin: 0.1in;
+          flex-grow: 1;
+          border-radius: 0.1in;
+        }
+      }
+
+      .endorsement-text > * {
+        margin: 0.1in 0.1in;
+      }
+
+      .bordered-image {
+        border: 0.05in solid var(--OpenOrange);
+      }
+
+.chandler-will-doublewide {
+  width: 100%;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: stretch;
+}
+
+.horizontal section {
+  width: 0;
+  flex-grow: 1;
+}
     </style>
   </head>
   <body>
@@ -172,16 +210,34 @@
         </h2>
         <h2>asosu.oregonstate.edu/elections</h2>
       </section>
-      <section>
-        <h1>idk yet lol</h1>
-      </section>
-      <section>
-        <h1>idk yet lol</h1>
+      <section class="doublewide-section">
+        <img src="IMG_4506_DxO.jpg" class="chandler-will-doublewide">
+        <div class="horizontal">
+          <section>
+            <h1>idk yet</h1>
+          </section>
+          <section>
+            <h1>idk yet</h1></section>
+        </div>
       </section>
     </div>
     <div class="side">
       <section class="who-we-are-container">
-        <h1>Who We Are</h1>
+        <h1>Track Record</h1>
+        <h2>Chandler Donahey</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+          quaerat aspernatur a nemo dolorum. Id repellendus voluptas facilis
+          beatae nobis dolorum optio at voluptatibus minus consequuntur deleniti
+          dolorem, eveniet magnam.
+        </p>
+        <h2>Will Garrison</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+          quaerat aspernatur a nemo dolorum. Id repellendus voluptas facilis
+          beatae nobis dolorum optio at voluptatibus minus consequuntur deleniti
+          dolorem, eveniet magnam.
+        </p>
       </section>
       <section>
         <h1>Priorities</h1>
@@ -205,8 +261,23 @@
         </p>
       </section>
       <section>
-        <h1>idk yet lol</h1>
-      </section>
+        <h1>Endorsements</h1>
+        <div class="endorsement">
+          <img src="osusec.png">
+          <div class="endorsement-text">
+            <h2>Security Club</h2>
+        <p>
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
+          </div>
+        </div>
+        <div class="endorsement">
+          <img class="bordered-image" src="carly.png">
+          <div class="endorsement-text">
+            <h2>Carly Thorkildson</h2>
+        <p>
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
+          </div>
+        </div>
     </div>
   </body>
 </html>
