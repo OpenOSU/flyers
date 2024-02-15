@@ -156,7 +156,7 @@
 
       .endorsement {
         display: flex;
-      
+
         img {
           width: 1in;
           align-self: center;
@@ -174,22 +174,72 @@
         border: 0.05in solid var(--OpenOrange);
       }
 
-.chandler-will-doublewide {
-  width: 100%;
-}
+      .chandler-will-doublewide {
+        width: 100%;
+      }
 
-.horizontal {
-  display: flex;
-  justify-content: stretch;
-}
+      .horizontal {
+        display: flex;
+        justify-content: stretch;
+      }
 
-.horizontal section {
-  width: 0;
-  flex-grow: 1;
-}
+      .horizontal section {
+        width: 0;
+        flex-grow: 1;
+      }
+
+      .prior-leadership-header {
+        color: white;
+        margin-top: -90px;
+        text-shadow: 0 0 10px black;
+        margin-bottom: 0;
+      }
     </style>
   </head>
   <body>
+    <div class="side">
+      <section>
+        <h1>Endorsements</h1>
+        <div class="endorsement">
+          <img src="osusec.png" />
+          <div class="endorsement-text">
+            <h2>Security Club</h2>
+            <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
+          </div>
+        </div>
+        <div class="endorsement">
+          <div class="endorsement-text">
+            <h2>Carly Thorkildson</h2>
+            <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
+          </div>
+          <img class="bordered-image" src="carly.png" />
+        </div>
+      </section>
+      <section class="doublewide-section">
+        <img src="IMG_4506_DxO.jpg" class="chandler-will-doublewide" />
+        <h1 class="prior-leadership-header">Prior Leadership</h1>
+        <div class="horizontal">
+          <section>
+            <h2>Chandler Donahey</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellendus quaerat aspernatur a nemo dolorum. Id repellendus
+              voluptas facilis beatae nobis dolorum optio at voluptatibus minus
+              consequuntur deleniti dolorem, eveniet magnam.
+            </p>
+          </section>
+          <section>
+            <h2>Will Garrison</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellendus quaerat aspernatur a nemo dolorum. Id repellendus
+              voluptas facilis beatae nobis dolorum optio at voluptatibus minus
+              consequuntur deleniti dolorem, eveniet magnam.
+            </p>
+          </section>
+        </div>
+      </section>
+    </div>
     <div class="side">
       <section class="cover">
         <img class="logo" src="openosu.svg" />
@@ -210,28 +260,16 @@
         </h2>
         <h2>asosu.oregonstate.edu/elections</h2>
       </section>
-      <section class="doublewide-section">
-        <img src="IMG_4506_DxO.jpg" class="chandler-will-doublewide">
-        <div class="horizontal">
-          <section>
-            <h1>idk yet</h1>
-          </section>
-          <section>
-            <h1>idk yet</h1></section>
-        </div>
-      </section>
-    </div>
-    <div class="side">
       <section class="who-we-are-container">
-        <h1>Prior Leadership</h1>
-        <h2>Chandler Donahey</h2>
+        <h1>idk yet</h1>
+        <h2>asdasdasdasd</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
           quaerat aspernatur a nemo dolorum. Id repellendus voluptas facilis
           beatae nobis dolorum optio at voluptatibus minus consequuntur deleniti
           dolorem, eveniet magnam.
         </p>
-        <h2>Will Garrison</h2>
+        <h2>asdasdasd</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
           quaerat aspernatur a nemo dolorum. Id repellendus voluptas facilis
@@ -260,24 +298,6 @@
           beatae nobis dolorum optio at voluptatibus minus consequuntur.
         </p>
       </section>
-      <section>
-        <h1>Endorsements</h1>
-        <div class="endorsement">
-          <img src="osusec.png">
-          <div class="endorsement-text">
-            <h2>Security Club</h2>
-        <p>
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
-          </div>
-        </div>
-        <div class="endorsement">
-          <div class="endorsement-text">
-            <h2>Carly Thorkildson</h2>
-        <p>
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
-          </div>
-          <img class="bordered-image" src="carly.png">
-        </div>
     </div>
   </body>
 </html>
